@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.welcome.attendance.AttendanceActivity2"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/green_light2">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/morning_attendance"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="150dp"
+        android:textAlignment="center"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="3dp"
+        tools:layout_editor_absoluteX="8dp"
+        app:cardCornerRadius="25dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/image7"
+                android:scaleType="center"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrival"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/evening_attendance"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="150dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        app:cardBackgroundColor="@android:color/holo_blue_dark"
+        tools:layout_editor_absoluteY="50dp"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image8" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

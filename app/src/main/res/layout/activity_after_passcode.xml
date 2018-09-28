@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/green_light2"
+    tools:context="com.example.welcome.attendance.afterPasscode">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter College Id"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/txt_id4"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radio_group4"
+        android:paddingHorizontal="5dp">
+
+        <RadioButton
+            android:id="@+id/al"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+
+            android:text="AL"
+            />
+
+        <RadioButton
+            android:id="@+id/cl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+
+            android:text="CL"
+            />
+
+        <RadioButton
+            android:id="@+id/ccl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:text="CCL"
+            app:layout_constraintBaseline_toBaselineOf="@+id/radio_btech"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio_btech" />
+
+        <RadioButton
+            android:id="@+id/dl"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:text="DL" />
+    </RadioGroup>
+
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Enter"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/roundedbutton_home"
+        android:paddingHorizontal="50dp"
+        android:textAllCaps="false"
+        android:id="@+id/btn_id4"
+        />
+
+</LinearLayout>
